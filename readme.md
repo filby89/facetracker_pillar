@@ -1,11 +1,24 @@
-# Facetracker PIllar Package
 
-This package provides ROS integration for real-time face tracking developed for the [PILLAR-Robots project](https://pillar-robots.eu) by [ARC](https://www.athenarc.gr). This package includes a ROS node for publishing face tracking data from video streams and a standalone demo for users who prefer not to use ROS.
+<div align="center">
+
+# Facetracker for PILLAR-Robots 
+
+[![Project WebPage](https://img.shields.io/badge/Project-webpage-blue)](https://pillar-robots.eu)
+
+</div>
+
+
+This package provides ROS integration for real-time face tracking used in the [PILLAR-Robots project](https://pillar-robots.eu) by [ARC](https://www.athenarc.gr). This package includes a ROS node for publishing face tracking data from video streams and a standalone demo for users who prefer not to use ROS.
+
+<p align="center"> 
+<img width="600px" src="assets/face_tracking.jpg">
+</p>
+
 
 ## Prerequisites
 
 - ROS Noetic (other versions may require adjustments)
-- Python 2.7 or 3.x
+- Python 3.x
 - OpenCV
 - cv_bridge ROS package
 - [ultralytics](https://github.com/ultralytics/ultralytics)
@@ -23,10 +36,10 @@ Ensure ROS Noetic is properly installed on your system. Instructions can be foun
 2. **Clone the package into your workspace's `src` directory** (assuming this package is available in a Git repository):
 
     ```bash
-    git clone https://example.com/facetracker_node.git
+    git clone https://github.com/filby89/facetracker_pillar
     ```
 
-    Replace `https://example.com/facetracker_node.git` with the actual repository URL.
+    Replace `https://github.com/filby89/facetracker_pillar` with the actual repository URL.
 
 3. **Build the package**:
 
@@ -81,3 +94,9 @@ If you prefer not to use ROS, a standalone `demo.py` is included. This script de
     python scripts/demo.py
     ```
 
+
+
+## Acknowledgements
+We acknowledge the following repositories for providing the face detection and tracking models:
+* https://github.com/akanametov/yolov8-face
+* https://github.com/ultralytics/ultralytics
