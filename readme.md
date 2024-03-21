@@ -3,7 +3,7 @@
 
 # Facetracker for PILLAR-Robots 
 
-[![Project WebPage](https://img.shields.io/badge/Project-webpage-blue)](https://pillar-robots.eu)
+<a href="https://pillar-robots.eu"> <img src="assets/pillar-logo.png" height="50px"></a>
 
 </div>
 
@@ -13,19 +13,21 @@ This package provides ROS integration for real-time face tracking used in the [P
 <p align="center"> 
 <img width="600px" src="assets/face_tracking.jpg">
 </p>
+<p align="center">Example output from the face tracker.</p>
 
 
 ## Prerequisites
 
-- ROS Noetic (other versions may require adjustments)
+- ROS Noetic (other versions may require adjustments) if you want to use the ROS node
 - Python 3.x
 - OpenCV
-- cv_bridge ROS package
 - [ultralytics](https://github.com/ultralytics/ultralytics)
 
-Ensure ROS Noetic is properly installed on your system. Instructions can be found on the [official ROS installation page](http://wiki.ros.org/noetic/Installation).
+
+Instructions for install ROS Noetic can be found on the [official ROS installation page](http://wiki.ros.org/noetic/Installation).
 
 ## Installation
+
 
 1. **Create or navigate to your ROS workspace**:
 
@@ -33,13 +35,11 @@ Ensure ROS Noetic is properly installed on your system. Instructions can be foun
     cd ~/my_ros_workspace/src
     ```
 
-2. **Clone the package into your workspace's `src` directory** (assuming this package is available in a Git repository):
+2. **Clone the package into your workspace's `src` directory** :
 
     ```bash
     git clone https://github.com/filby89/facetracker_pillar
     ```
-
-    Replace `https://github.com/filby89/facetracker_pillar` with the actual repository URL.
 
 3. **Build the package**:
 
@@ -62,21 +62,15 @@ Ensure ROS Noetic is properly installed on your system. Instructions can be foun
 
 ### Running the ROS Node
 
-1. **Start the ROS master** (if not already running):
-
-    ```bash
-    roscore
-    ```
-
-2. **Launch the `FaceTrackerNode`**:
+1. **Launch the `FaceTrackerNode`**:
 
     ```bash
     roslaunch facetracker_pillar facetracker.launch
     ```
+    
+    The node subscribes to a video stream and publishes face tracking data to the `/face_tracker` topic.
 
-    Ensure you have the `facetracker.launch` file set up as described in the package documentation.
-
-### Running the Standalone Demo
+## Running the Standalone Demo
 
 If you prefer not to use ROS, a standalone `demo.py` is included. This script demonstrates basic face tracking functionality without the need for ROS infrastructure.
 
