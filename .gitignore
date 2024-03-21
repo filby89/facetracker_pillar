@@ -1,0 +1,52 @@
+# General ROS ignore items
+build/
+devel/
+logs/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*~ 
+*.bak 
+*.bak
+*.tmp
+*.temp
+
+# Python virtual environments
+venv/
+*.venv
+env/
+*.env
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Compiled Python files
+__pycache__/
+
+# Package specific ignores
+# Add any files or directories specific to your package that should not be tracked by git.
+# e.g., large data files, confidential information, etc.
+
+# Ignore ROS bag files
+*.bag
+*.bag.active
+
+# Ignore model files if they are large or confidential
+
+# Ignore generated docs
+docs/_build/
+
+# Node.js development
+node_modules/
+
+# Logs
+*.log
+*.sqlite
+
+# Others
+.DS_Store
+Thumbs.db

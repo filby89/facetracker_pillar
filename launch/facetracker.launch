@@ -1,0 +1,5 @@
+<launch>
+  <!-- Node for face tracking -->
+  <node name="facetracker_node" pkg="facetracker_pillar" type="facetracker_node.py" output="screen">
+  </node>
+</launch>
