@@ -75,8 +75,6 @@ If you prefer not to use ROS, a standalone `demo.py` is included. This script de
 
 1. **Navigate to the script's directory**:
 
-    Assuming `demo.py` is located in the `scripts` directory of the package:
-
     ```bash
     cd ~/my_ros_workspace/src/facetracker_pillar
     ```
